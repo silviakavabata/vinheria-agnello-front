@@ -1,0 +1,47 @@
+.banner {
+    background-color: var(--cor-fundo-bege);
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px 15%;
+    display: grid;
+    align-items: center;
+}
+
+.banner__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.banner__container-titulo {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    font-size: 45px;
+    padding-bottom: 48px;
+}
+
+.banner__container-texto {
+    font-size: 24px;
+    color: var(--cor-texto);
+    margin-bottom: 10%;
+}
+
+.banner__container-botao {
+    padding: 19px 19px;
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    background-color: var(--cor-links);
+    border: none;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.banner__container-imagem {
+    height: 597px;
+    width: auto;
+}

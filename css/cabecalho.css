@@ -1,0 +1,69 @@
+.cabecalho__nav_list {
+    display: grid;
+    grid-template-columns: 0.3fr auto auto auto 30% auto auto;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecalho {
+    padding: 5px 10%;
+    width: 100%;
+}
+
+.cabecalho__logo {
+    width: 123px;
+    height: auto;
+}
+
+.cabecalho__nav_list_link {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--cor-links);
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cabecalho__nav_list_item-input {
+    position: relative;
+}
+
+.cabecalho__nav_list_input {
+    width: 50%;
+    height: 47px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-links);
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    text-align: center;
+}
+
+.pesquisa-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.cabecalho__nav_list_link.cabecalho__nav_list_link-login img {
+    width: auto;
+    height: 30px;
+    top: 50%;
+}
+
+.cabecalho__nav_list_link.cabecalho__nav_list_link-sacola img {
+    width: auto;
+    height: 30px;
+    top: 50%;
+}

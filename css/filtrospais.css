@@ -1,0 +1,30 @@
+.filtro__pais {
+    padding: 150px 10%;
+}
+
+.filtro__pais-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-top: 3%;}
+
+.filtro__pais-titulo {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    font-size: 32px;
+}
+
+.filtro__pais_item_titulo {
+    color: var(--cor-texto-destaque);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5%;
+}

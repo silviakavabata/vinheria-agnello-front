@@ -1,0 +1,64 @@
+.recomendados {
+    padding: 30px 10%;
+}
+
+.recomendados__titulo {
+    font-size: 32px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recomendados__list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    list-style-type: none;
+}
+
+.recomendados__list_item {
+    background-color: #D9D9D9;
+    padding: 30px;
+}
+
+.recomendados__nome {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-links);
+}
+
+.recomendados__descricao {
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+}
+
+.recomendados__preco {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 10px;
+}
+
+.recomendados__botao {
+    width: 100%;
+    padding: 19px 19px;
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    background-color: var(--cor-links);
+    border: none;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+    text-align: center;
+}

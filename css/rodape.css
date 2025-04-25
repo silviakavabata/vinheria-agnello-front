@@ -1,0 +1,33 @@
+.rodape {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 30px 10%;
+    background-color: var(--cor-links);
+}
+
+.rodape__coluna_titulo {
+    font-size: 16px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-texto-claro);
+}
+
+.rodape__coluna_lista {
+    list-style-type: none;
+    line-height: 50px;
+}
+
+.rodape__coluna_list_link {
+    font-size: 14px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto-claro);
+}
+
+.rodape__coluna.rodape__coluna_links {
+    margin-top: 60px;
+}

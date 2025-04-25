@@ -1,0 +1,79 @@
+.produto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 20%;
+    justify-items: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.produto__imagem {
+    width: auto;
+    height: 500px;
+}
+
+.produto__titulo {
+    font-size: 32px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-links);
+}
+
+.produto__tabela_informacoes {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    border-spacing: 15px 20px;
+    margin-top: 20px;
+    margin-left: -4%;
+}
+
+.produto__preco {
+    font-size: 32px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 40px;
+}
+
+.produto__quantidade {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.produto__quantidade-botao {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--cor-links);
+    color: var(--cor-links);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.produto__quantidade-input {
+    width: 60px;
+    height: 40px;
+    border: 1px solid var(--cor-links);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.produto__botao {
+    padding: 19px 60px;
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    background-color: var(--cor-links);
+    border: none;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+}

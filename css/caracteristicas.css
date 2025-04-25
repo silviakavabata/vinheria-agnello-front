@@ -1,0 +1,56 @@
+.caracteristicas {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    padding: 30px 10%;
+    gap: 50px;
+    justify-items: center;
+}
+
+.caracteristicas__sommelier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+}
+
+.caracteristicas__sommelier-comentario {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-areas: "aspas descricao-vinho";
+    margin-top: 40px;
+}
+
+.caracteristicas__titulo {
+    font-size: 32px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+}
+
+.caracteristicas__tabela_informacoes {
+    text-align: left;
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    border-spacing: 15px 20px;
+    margin-top: 20px;
+}
+
+.caracteristicas__icone-aspas {
+    margin-right: 30px;
+}
+
+.caracteristicas__sommelier-imagem {
+    justify-items: center;
+}
+
+.sommelier__nome-sommelier {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+}

@@ -1,0 +1,96 @@
+.sommelier__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto imagem";
+    padding: 30px 10%;
+    justify-items: center;
+}
+
+.sommelier__descricao-vinho-container {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-areas: "aspas descricao-vinho";
+    margin-top: 40px;
+}
+
+.sommelier-titulo {
+    font-size: 32px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    text-align: center;
+}
+
+.sommelier__nome-vinho {
+    font-size: 32px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-links)
+}
+
+.sommelier__descricao-vinho {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+}
+
+.sommelier__tabela-informacoes {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    border-spacing: 15px 20px;
+    margin-top: 40px;
+}
+
+.sommelier-valor-vinho {
+    font-size: 32px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 40px;
+}
+
+.sommelier-botao {
+    padding: 19px 19px;
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    background-color: var(--cor-links);
+    border: none;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 30px;
+}
+
+.sommelier__nome-sommelier {
+    font-size: 24px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    text-align: right;
+}
+
+.sommelier__container-texto {
+    grid-area: texto;
+}
+
+.sommelier__container-imagem {
+    grid-area: imagem;
+}
+
+.sommelier__aspas {
+    grid-area: aspas;
+}
+
+.sommelier__descricao-vinho {
+    grid-area: descricao-vinho;
+}
