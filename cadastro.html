@@ -5,109 +5,51 @@
   <title>Cadastro - Vinheria Agnello</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./css/cabecalho.css">
-  <link rel="stylesheet" href="./css/rodape.css">
-  <link rel="stylesheet" href="./css/notarodape.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
   <header>
-    <nav class="cabecalho">
-      <ul class="cabecalho__nav">
-        <ul class="cabecalho__nav_list">
-          <li class="logo">
-            <h1 class="cabecalho__logo">
-              <img src="./assets/icons/logo.svg" alt="Logo Vinheria Agnello">
-            </h1>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
-          </li>
-          <li class="cabecalho__nav_list_item-input">
-            <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
-            <input type="search" id="search" placeholder="Buscar" class="cabecalho__nav_list_input">
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
-            src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
-            src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
-          </li>
-        </ul>
-      </ul>
-    </nav>
+    <div class="cabecalho__logo">
+      <img src="./assets/icons/logo.svg" alt="Logo Vinheria Agnello">
+    </div>
   </header>
   <main class="cadastro">
-    <h1>Cadastro</h1>
+    <h1>Cadastre-se na sua vinheria favorita!</h1>
+    <p>O cadastro é gratuito. Aproveite sua nova conta para visualizar ofertas únicas e selecionadas!</p>
     <form action="login.html">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" class="input-full" placeholder="Nome Completo" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <div class="input-group" style="margin-bottom: 20px;">
+        <input type="text" placeholder="CPF ou CNPJ" required>
+        <input type="email" placeholder="Email" required>
+      </div>
 
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
+      <div class="input-group" style="margin-bottom: 20px;">
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirmar a senha" required>
+      </div>
 
-      <button type="submit">Cadastrar</button>
+      <div class="checkboxes">
+        <label><input type="checkbox" required> Estou ciente da proibição legal contida no art. 81, II da Lei nº 8.069/90 de venda de bebidas alcoólicas para crianças e adolescentes menores de 18 anos de idade.</label>
+        <label><input type="checkbox"> Estou ciente e quero receber mensagens, cupons, promoções e ofertas.</label>
+        <label><input type="checkbox" required> Estou ciente e de acordo com o tratamento de meus dados pessoais, conforme descrito na Política de Privacidade.</label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit" class="google-btn">
+          <img src="./assets/icons/google-icon.svg" alt="Logo Google" class="google-logo">
+          Cadastrar com o Google
+        </button>
+        <button type="submit" class="submit-btn">Concluir cadastro</button>
+      </div>
     </form>
+    <p>Já possui um cadastro? <a href="login.html">Clique aqui para entrar</a></p>
   </main>
   <footer>
-    <section class="rodape">
-      <div class="rodape__coluna rodape__coluna_logo">
-        <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
-      </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Vinhos</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tintos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Brancos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Rosé</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Espumantes</a>
-            </li>
-          </ul>
-      </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Presentes</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Acessórios</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Kits</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Embalagens Especiais</a></li>
-          </ul>
-      </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Clube Agnello</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Como Funciona</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Seja um membro</a></li>
-            </ul>
-        </div>
-        <div class="rodape__coluna rodape__coluna_links">
-          <h5 class="rodape__coluna_titulo">Sobre Nós</h5>
-            <ul class="rodape__coluna_lista">
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Conheça a Vinheria</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Instagram</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Youtube</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tiktok</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="nota_rodape">
-      <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p></section>
+    <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
+    <p>Vinheria Agnello est. 1990</p>
+    <p>SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p>
   </footer>
 </body>
 </html>

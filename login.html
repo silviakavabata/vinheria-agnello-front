@@ -12,6 +12,13 @@
   <link rel="stylesheet" href="./css/cabecalho.css">
   <link rel="stylesheet" href="./css/rodape.css">
   <link rel="stylesheet" href="./css/notarodape.css">
+  <style>
+    .google-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -58,6 +65,19 @@
       <input type="password" id="senha" name="senha" required>
 
       <button type="submit">Entrar</button>
+      
+      <!-- Botão de login com Google -->
+      <button type="button" class="google-login">
+        <img src="./assets/icons/google-icon.svg" alt="Google Icon" class="google-icon"> Entrar com Google
+      </button>
+
+      <!-- Caixa de Lembrar acesso e Esqueci senha -->
+      <div class="login-options">
+        <label for="lembrar" class="lembrar">
+          <input type="checkbox" id="lembrar" name="lembrar"> Lembrar meu acesso
+        </label>
+        <a href="#" class="esqueci-senha">Esqueceu a senha?</a>
+      </div>
     </form>
     <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
   </main>
@@ -66,44 +86,6 @@
       <div class="rodape__coluna rodape__coluna_logo">
         <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
       </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Vinhos</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tintos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Brancos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Rosé</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Espumantes</a>
-            </li>
-          </ul>
-      </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Presentes</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Acessórios</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Kits</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Embalagens Especiais</a></li>
-          </ul>
-      </div>
-      <div class="rodape__coluna rodape__coluna_links">
-        <h5 class="rodape__coluna_titulo">Clube Agnello</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Como Funciona</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Seja um membro</a></li>
-            </ul>
-        </div>
-        <div class="rodape__coluna rodape__coluna_links">
-          <h5 class="rodape__coluna_titulo">Sobre Nós</h5>
-            <ul class="rodape__coluna_lista">
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Conheça a Vinheria</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Instagram</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Youtube</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tiktok</a></li>
-            </ul>
-        </div>
-    </section>
-
     <section class="nota_rodape">
       <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p></section>
   </footer>
