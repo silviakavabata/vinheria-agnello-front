@@ -10,6 +10,8 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
+    max-width: 2000px;
+    margin: 0 auto;
   }
   
   .carrinho__itens {
@@ -26,6 +28,8 @@ body {
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    align-items: flex-start; /* Alinha imagem e info no topo */
   }
   
   .carrinho__item img {
@@ -38,7 +42,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   
   .carrinho__info h3 {
@@ -50,18 +54,38 @@ body {
     font-size: 1.125rem;
     color: #a02622;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .carrinho__detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
   }
   
   .carrinho__detalhes .linha {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 0;
+    text-align: left;
     font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
   }
-  
+
+  .carrinho__detalhes .linha::after {
+    content: '';
+  }
+
+  .carrinho__detalhes .linha span:first-child::after {
+    content: ' ';
+    margin-right: 0.3rem;
+  }
+
   .carrinho__remover {
-    align-self: flex-start;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -122,7 +146,6 @@ body {
     font-size: 0.9rem;
     width: 120px;
   }
-  
   
   .resumo__total {
     margin-top: 1rem;
