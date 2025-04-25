@@ -1,0 +1,59 @@
+.sobre {
+    padding: 30px 10%;
+    text-align: center;
+  }
+  
+  .sobre__titulo {
+    font-size: 32px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    color: var(--cor-links);
+    margin-bottom: 40px;
+  }
+  
+  .sobre__conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .sobre__texto {
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    color: var(--cor-texto);
+    text-align: left;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .sobre__imagem img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.chat-popup {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #4D202F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.chat-popup img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
