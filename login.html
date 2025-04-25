@@ -5,20 +5,11 @@
   <title>Login - Vinheria Agnello</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600;700&family=Unna:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/cabecalho.css">
-  <link rel="stylesheet" href="./css/rodape.css">
+  <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="./css/notarodape.css">
-  <style>
-    .google-icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-    }
-  </style>
+
 </head>
 <body>
   <header>
@@ -39,55 +30,53 @@
           <li class="cabecalho__nav_list_item">
             <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
           </li>
+          <li class="cabecalho__nav_list_item">
+            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Login</a>
+          </li>
           <li class="cabecalho__nav_list_item-input">
             <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
             <input type="search" id="search" placeholder="Buscar" class="cabecalho__nav_list_input">
           </li>
           <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
-            src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
+            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
           </li>
           <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
-            src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
+            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
           </li>
         </ul>
       </ul>
     </nav>
   </header>
   <main class="login-container">
-    <h1>Login</h1>
-    <form action="home.html">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <section>
+      <h1>Seja bem-vindo(a) à sua vinheria favorita!</h1>
+      <p>Antes de continuar, faça seu login</p>
+      <form action="home.html">
+        <label for="email">E-mail ou CPF:</label>
+        <input type="email" id="email" name="email" required>
 
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
 
-      <button type="submit">Entrar</button>
-      
-      <!-- Botão de login com Google -->
-      <button type="button" class="google-login">
-        <img src="./assets/icons/google-icon.svg" alt="Google Icon" class="google-icon"> Entrar com Google
-      </button>
+        <div class="login-options">
+          <label for="lembrar"><input type="checkbox" id="lembrar"> Lembrar meu acesso</label>
+          <a href="#" class="esqueci-senha">Esqueceu sua senha?</a>
+        </div>
 
-      <!-- Caixa de Lembrar acesso e Esqueci senha -->
-      <div class="login-options">
-        <label for="lembrar" class="lembrar">
-          <input type="checkbox" id="lembrar" name="lembrar"> Lembrar meu acesso
-        </label>
-        <a href="#" class="esqueci-senha">Esqueceu a senha?</a>
-      </div>
-    </form>
-    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <button type="submit">Entrar</button>
+
+        <button type="button" class="google-login">
+          <img src="./assets/icons/google-icon.svg" alt="Google Icon" class="google-icon"> Entrar com o Google
+        </button>
+
+      </form>
+      <p>Não possui cadastro? <a href="cadastro.html">Clique aqui para se registrar</a></p>
+    </section>
   </main>
   <footer>
-    <section class="rodape">
-      <div class="rodape__coluna rodape__coluna_logo">
-        <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
-      </div>
-    <section class="nota_rodape">
-      <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p></section>
+    <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
+    <p>Vinheria Agnello est. 1990</p>
+    <p>SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p>
   </footer>
 </body>
 </html>
