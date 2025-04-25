@@ -5,13 +5,11 @@
   <title>Carrinho - Vinheria Agnello</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Unna&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/cabecalho.css">
   <link rel="stylesheet" href="./css/rodape.css">
   <link rel="stylesheet" href="./css/notarodape.css">
+  <link rel="stylesheet" href="./css/carrinho.css">
 </head>
 <body>
   <header>
@@ -23,39 +21,99 @@
               <img src="./assets/icons/logo.svg" alt="Logo Vinheria Agnello">
             </h1>
           </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
-          </li>
+          <li><a href="#" class="cabecalho__nav_list_link">Vinhos</a></li>
+          <li><a href="#" class="cabecalho__nav_list_link">Presentes</a></li>
+          <li><a href="#" class="cabecalho__nav_list_link">Clube Agnello</a></li>
           <li class="cabecalho__nav_list_item-input">
             <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
-            <input type="search" id="search" placeholder="Buscar" class="cabecalho__nav_list_input">
+            <input type="search" placeholder="Buscar" class="cabecalho__nav_list_input">
           </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
-            src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
-            src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
-          </li>
+          <li><a href="#" class="cabecalho__nav_list_link"><img src="./assets/icons/icone-login.svg" alt="Login"></a></li>
+          <li><a href="#" class="cabecalho__nav_list_link"><img src="./assets/icons/icone-sacola.svg" alt="Sacola"></a></li>
         </ul>
       </ul>
     </nav>
   </header>
+
   <main class="carrinho">
-    <h1>Seu Carrinho</h1>
-    <ul>
-      <li>Vinho Malbec 2023 - R$72,90 <button>Remover</button></li>
-    </ul>
-    <p>Total: R$72,90</p>
-    <a href="compra.html" class="btn">Finalizar Compra</a>
+    <section class="carrinho__itens">
+
+      <div class="carrinho__item">
+        <img src="./assets/produtos/VinhoSC.png" alt="Vinho Santa Carolina">
+        <div class="carrinho__info">
+          <h3>Vinho Santa Carolina VSC 750ml</h3>
+          <p class="carrinho__preco">R$ 699,90</p>
+          <div class="carrinho__detalhes">
+            <div class="linha"><span>Tipo:</span><span>Tinto</span></div>
+            <div class="linha"><span>País:</span><span>Chile</span></div>
+            <div class="linha"><span>Origem:</span><span>Importados</span></div>
+            <div class="linha"><span>Uvas:</span><span>Blend</span></div>
+          </div>
+          <button class="carrinho__remover"><img src="./assets/icons/Trash.png" alt="Remover"></button>
+        </div>
+      </div>
+
+      <div class="carrinho__item">
+        <img src="./assets/produtos/VinhoCBM.png" alt="Vinho Cobos Bramare Malbec">
+        <div class="carrinho__info">
+          <h3>Vinho Cobos Bramare Malbec Valle do Uco 750ml</h3>
+          <p class="carrinho__preco">R$ 514,90</p>
+          <div class="carrinho__detalhes">
+            <div class="linha"><span>Tipo:</span><span>Tinto</span></div>
+            <div class="linha"><span>País:</span><span>Argentina</span></div>
+            <div class="linha"><span>Origem:</span><span>Importados</span></div>
+            <div class="linha"><span>Uvas:</span><span>Malbec</span></div>
+          </div>
+          <button class="carrinho__remover"><img src="./assets/icons/Trash.png" alt="Remover"></button>
+        </div>
+      </div>
+
+      <div class="carrinho__item">
+        <img src="./assets/produtos/VinhoLA.png" alt="Vinho Luiz Argenta">
+        <div class="carrinho__info">
+          <h3>Vinho Luiz Argenta Clássico Merlot 750ml</h3>
+          <p class="carrinho__preco">R$ 106,90</p>
+          <div class="carrinho__detalhes">
+            <div class="linha"><span>Tipo:</span><span>Tinto</span></div>
+            <div class="linha"><span>País:</span><span>Brasil</span></div>
+            <div class="linha"><span>Origem:</span><span>Nacional</span></div>
+            <div class="linha"><span>Uvas:</span><span>Merlot</span></div>
+          </div>
+          <button class="carrinho__remover"><img src="./assets/icons/Trash.png" alt="Remover"></button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="carrinho__resumo">
+      <h3>Resumo</h3>
+      <div class="resumo__linha">
+        <span>Subtotal</span>
+        <span>R$ 1.321,70</span>
+      </div>
+      <div class="resumo__linha resumo__linha--cupom">
+        <span>Cupom de Desconto</span>
+        <span class="resumo__cupom-box">
+          <img src="./assets/icons/Cupom.png" alt="Ícone cupom">
+          <input type="text" placeholder="Inserir Cupom">
+        </span>
+      </div>
+      <div class="resumo__linha">
+        <span>Frete</span>
+        <span><a href="#">Calcular</a></span>
+      </div>
+      <div class="resumo__total">
+        <div class="resumo__linha">
+          <span class="label">Total</span>
+          <span class="valor">R$ 1.321,70</span>
+        </div>
+        <p class="resumo__parcelado">ou 2x R$ 660,85 sem juros</p>
+      </div>
+      <a href="compra.html" class="btn-finalizar">Finalizar Compra</a>
+      <a href="#" class="continuar">Continuar Comprando</a>
+    </section>
   </main>
+
   <footer>
     <section class="rodape">
       <div class="rodape__coluna rodape__coluna_logo">
@@ -63,44 +121,46 @@
       </div>
       <div class="rodape__coluna rodape__coluna_links">
         <h5 class="rodape__coluna_titulo">Vinhos</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tintos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Brancos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Rosé</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Espumantes</a>
-            </li>
-          </ul>
+        <ul class="rodape__coluna_lista">
+          <li><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Tintos</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Brancos</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Rosé</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Espumantes</a></li>
+        </ul>
       </div>
       <div class="rodape__coluna rodape__coluna_links">
         <h5 class="rodape__coluna_titulo">Presentes</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Acessórios</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Kits</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Embalagens Especiais</a></li>
-          </ul>
+        <ul class="rodape__coluna_lista">
+          <li><a href="#" class="rodape__coluna_list_link">Todos os Produtos</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Acessórios</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Kits</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Embalagens Especiais</a></li>
+        </ul>
       </div>
       <div class="rodape__coluna rodape__coluna_links">
         <h5 class="rodape__coluna_titulo">Clube Agnello</h5>
-          <ul class="rodape__coluna_lista">
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Como Funciona</a></li>
-            <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Seja um membro</a></li>
-            </ul>
-        </div>
-        <div class="rodape__coluna rodape__coluna_links">
-          <h5 class="rodape__coluna_titulo">Sobre Nós</h5>
-            <ul class="rodape__coluna_lista">
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Conheça a Vinheria</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Instagram</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Youtube</a></li>
-              <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tiktok</a></li>
-            </ul>
-        </div>
+        <ul class="rodape__coluna_lista">
+          <li><a href="#" class="rodape__coluna_list_link">Como Funciona</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Seja um membro</a></li>
+        </ul>
+      </div>
+      <div class="rodape__coluna rodape__coluna_links">
+        <h5 class="rodape__coluna_titulo">Sobre Nós</h5>
+        <ul class="rodape__coluna_lista">
+          <li><a href="#" class="rodape__coluna_list_link">Conheça a Vinheria</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Instagram</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Youtube</a></li>
+          <li><a href="#" class="rodape__coluna_list_link">Tiktok</a></li>
+        </ul>
+      </div>
     </section>
-
     <section class="nota_rodape">
-      <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p></section>
+      <p class="nota_rodape__texto">
+        Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO.
+        A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.
+      </p>
+    </section>
   </footer>
 </body>
 </html>
