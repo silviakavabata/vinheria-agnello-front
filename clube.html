@@ -12,11 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/produto.css">
-    <link rel="stylesheet" href="./css/caracteristicas.css">
-    <link rel="stylesheet" href="./css/recomendados.css">
     <link rel="stylesheet" href="./css/rodape.css">
     <link rel="stylesheet" href="./css/notarodape.css">
+    <link rel="stylesheet" href="./css/clube.css">
+    <link rel="stylesheet" href="./css/clube-funcionamento.css">
 </head>
 
 <body>
@@ -30,24 +29,24 @@
                         </h1>
                     </li>
                     <li class="cabecalho__nav_list_item">
-                        <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
+                        <a href="produtos.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
                     </li>
                     <li class="cabecalho__nav_list_item">
-                        <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
+                        <a href="produtos.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
                     </li>
                     <li class="cabecalho__nav_list_item">
-                        <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
+                        <a href="clube.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
                     </li>
                     <li class="cabecalho__nav_list_item-input">
                         <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
                         <input type="search" id="search" placeholder="Buscar" class="cabecalho__nav_list_input">
                     </li>
                     <li class="cabecalho__nav_list_item">
-                        <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
+                        <a href="login.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
                                 src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
                     </li>
                     <li class="cabecalho__nav_list_item">
-                        <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
+                        <a href="carrinho.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
                                 src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
                     </li>
                 </ul>
@@ -59,9 +58,138 @@
         <div class="clube__titulo">
             <h2 class="clube__titulo_texto">Escolha o melhor plano para você</h2>
         </div>
-        <div class="">
-            
+        <ul class="clube__nav">
+            <ul class="clube__nav_list">
+                <li class="clube__nav_list_item">
+                    <a href="#" class="clube__nav_list_link cabecalho__nav_list_link-essencial">Essencial</a>
+                </li>
+                <li class="clube__nav_list_item">
+                    <a href="#" class="clube__nav_list_link cabecalho__nav_list_link-reserva-especial">Reserva
+                        Especial</a>
+                </li>
+                <li class="clube__nav_list_item">
+                    <a href="#" class="clube__nav_list_link cabecalho__nav_list_link-agnello-selecao-sommelier">Seleção
+                        Sommelier</a>
+                </li>
+            </ul>
+        </ul>
+        <div class="clube__descricao_container">
+            <div class="clube__descricao">
+                <p class="clube__descricao_texto">Ideal para quem deseja explorar novos rótulos sem complicação.
+                    Perfeito
+                    para harmonizar com o dia a dia e descobrir novos sabores!</p>
+                <h6 class="clube__descricao_subtitulo">O que você ganha todo mês:</h6>
+                <ul class="clube__descricao_lista">
+                    <li class="clube__descricao_lista_item">2 vinhos selecionados por nossos sommeliers</li>
+                    <li class="clube__descricao_lista_item">Ficha técnica com informações e sugestões de harmonização
+                    </li>
+                    <li class="clube__descricao_lista_item">Frete grátis nas compras na Vinheria Agnello</li>
+                    <div class="clube__preco_container">
+                        <p class="clube__preco_texto">R$ 75,50</p>
+                        <p class="clube__preco_texto_periodo">/mês</p>
+                    </div>
+                    <button class="clube__preco_botao">Assinar o plano</button>
+            </div>
+            <div class="clube__imagem">
+                <img src="./assets/clube-img.png" alt="Imagem de dois vinhos" class="clube__imagem_essencial">
+            </div>
         </div>
+    </section>
+
+    <section class="clube-funcionamento">
+        <div class="clube-funcionamento__titulo">
+            <h2 class="clube-funcionamento__titulo_texto">Entenda como funciona</h2>
+        </div>
+        <ul class="clube-funcionamento__list">
+            <li class="clube-funcionamento__list_item">
+                <img src="./assets/icons/check-icon.svg" alt="Icone de check" class="clube-funcionamento__imagem">
+                <div class="clube-funcionamento__descricao">
+                    <h4 class="clube-funcionamento__titulo">Escolha seu plano</h4>
+                    <p class="clube-funcionamento__descricao">Escolha o plano ideal para você e seu estilo de vida.</p>
+                </div>
+            </li>
+            <li class="clube-funcionamento__list_item">
+                <img src="./assets/icons/taca-icon.svg" alt="Icone de taça" class="clube-funcionamento__imagem">
+                <div class="clube-funcionamento__descricao">
+                    <h4 class="clube-funcionamento__titulo">Curadoria</h4>
+                    <p class="clube-funcionamento__descricao">Nossos sommeliers analisam diversos vinhos e selecionam os
+                        melhores.</p>
+                </div>
+            </li>
+            <li class="clube-funcionamento__list_item">
+                <img src="./assets/icons/caixa-icon.svg" alt="Icone de caixa" class="clube-funcionamento__imagem">
+                <div class="clube-funcionamento__descricao">
+                    <h4 class="clube-funcionamento__titulo">Receba em casa</h4>
+                    <p class="clube-funcionamento__descricao">Todo mês, você recebe seus vinhos onde quiser, com
+                        conforto e segurança.</p>
+                </div>
+            </li>
+            <li class="clube-funcionamento__list_item">
+                <img src="./assets/icons/brinde-icon.svg" alt="Icone de brinde" class="clube-funcionamento__imagem">
+                <div class="clube-funcionamento__descricao">
+                    <h4 class="clube-funcionamento__titulo">Brinde!</h4>
+                    <p class="clube-funcionamento__descricao">Viva experiências incríveis com a degustação de nossos
+                        vinhos.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <section class="rodape">
+            <div class="rodape__coluna rodape__coluna_logo">
+                <img src="./assets/icons/logo-brasao.svg" alt="Logo Vinheria Agnello" class="rodape__logo">
+            </div>
+            <div class="rodape__coluna rodape__coluna_links">
+                <h5 class="rodape__coluna_titulo">Vinhos</h5>
+                <ul class="rodape__coluna_lista">
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Todos os
+                            Produtos</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Tintos</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Brancos</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Rosé</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Espumantes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape__coluna rodape__coluna_links">
+                <h5 class="rodape__coluna_titulo">Presentes</h5>
+                <ul class="rodape__coluna_lista">
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Todos os
+                            Produtos</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Acessórios</a>
+                    </li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Kits</a></li>
+                    <li class="rodape__coluna_list_item"><a href="produtos.html" class="rodape__coluna_list_link">Embalagens
+                            Especiais</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna rodape__coluna_links">
+                <h5 class="rodape__coluna_titulo">Clube Agnello</h5>
+                <ul class="rodape__coluna_lista">
+                    <li class="rodape__coluna_list_item"><a href="clube.html" class="rodape__coluna_list_link">Como Funciona</a>
+                    </li>
+                    <li class="rodape__coluna_list_item"><a href="clube.html" class="rodape__coluna_list_link">Seja um membro</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rodape__coluna rodape__coluna_links">
+                <h5 class="rodape__coluna_titulo">Sobre Nós</h5>
+                <ul class="rodape__coluna_lista">
+                    <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Conheça a
+                            Vinheria</a></li>
+                    <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Instagram</a></li>
+                    <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Youtube</a></li>
+                    <li class="rodape__coluna_list_item"><a href="#" class="rodape__coluna_list_link">Tiktok</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="nota_rodape">
+            <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A
+                VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p>
+        </section>
+    </footer>
 </body>
 
 </html>

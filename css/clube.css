@@ -1,0 +1,111 @@
+.clube {
+    padding: 30px 10%;
+}
+
+.clube__titulo_texto {
+    font-size: 32px;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-links);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.clube__nav_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.clube__nav_list_link {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+}
+
+.clube__nav_list_link:hover {
+    color: var(--cor-links);
+}
+
+.clube__nav_list_link:active {
+    color: var(--cor-links);
+    font-weight: 400;
+}
+
+.clube__descricao {
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 10px;
+}
+
+.clube__descricao_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.clube__descricao_texto {
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 10px;
+}
+
+.clube__descricao_subtitulo {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.clube__descricao_lista {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.clube__preco_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.clube__preco_texto {
+    font-size: 32px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--cor-texto);
+    margin-top: 40px;
+}
+
+.clube__preco_botao {
+    padding: 19px 100px;
+    color: var(--cor-texto-claro);
+    font-size: 20px;
+    background-color: var(--cor-links);
+    border: none;
+    font-family: "Unna", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 40px;
+}
+
+.clube__imagem {
+    width: auto;
+    height: 100%;
+}
