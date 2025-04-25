@@ -12,8 +12,12 @@
   <link rel="stylesheet" href="./css/cabecalho.css">
   <link rel="stylesheet" href="./css/rodape.css">
   <link rel="stylesheet" href="./css/notarodape.css">
+  <link rel="stylesheet" href="./css/produto.css">
+  <link rel="stylesheet" href="./css/recomendados.css">
 </head>
 <body>
+
+  <!-- header -->
   <header>
     <nav class="cabecalho">
       <ul class="cabecalho__nav">
@@ -24,13 +28,13 @@
             </h1>
           </li>
           <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
+            <a href="produtos.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
           </li>
           <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
+            <a href="produtos.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
           </li>
           <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
+            <a href="clube.html" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
           </li>
           <li class="cabecalho__nav_list_item-input">
             <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
@@ -48,33 +52,263 @@
       </ul>
     </nav>
   </header>
-  <header>
-    <a href="home.html">Home</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="clube.html">Clube</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="login.html">Login</a>
-  </header>
+  <!-- .header -->
 
+
+  <!-- main -->
   <main>
-    <h1>Todos os Produtos</h1>
-    <div class="produtos-grid">
-      <div class="produto"><a href="item.html">Vinho 1</a></div>
-      <div class="produto"><a href="item.html">Vinho 2</a></div>
-      <div class="produto"><a href="item.html">Vinho 3</a></div>
-      <div class="produto"><a href="item.html">Vinho 4</a></div>
-      <div class="produto"><a href="item.html">Vinho 5</a></div>
-      <div class="produto"><a href="item.html">Vinho 6</a></div>
-      <div class="produto"><a href="item.html">Vinho 7</a></div>
-      <div class="produto"><a href="item.html">Vinho 8</a></div>
-      <div class="produto"><a href="item.html">Vinho 9</a></div>
-      <div class="produto"><a href="item.html">Vinho 10</a></div>
-    </div>
-  </main>
+    <!-- all-products -->
+    <section class="all-products">
+      <h3 class="all-products__titulo">Todos os Produtos</h3>
+      <ul class="all-products__list">
+        <!-- produto-1 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-1.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Espumante Monte Paschoal Edição Especial Brut</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Brasil • Espumante • Brut</p>
+          <p class="all-products__preco">R$59,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-1 -->
+        <!-- produto-2 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-2.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Terra Pequena Signature Vinho regional Alentejano</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Portugal • Tinto • Meio Seco</p>
+          <p class="all-products__preco">R$139,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-2 -->
+        <!-- produto-3 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-3.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Frisante Pontebello Lambrusco I.G.T. dellEmilia Bianco Amabile</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Itália • Frisante • Suave/Doce</p>
+          <p class="all-products__preco">R$64,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-3 -->
+        <!-- produto-4 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-4.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Kyrios Torrontés</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Argentina • Branco • Seco</p>
+          <p class="all-products__preco">R$119,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-4 -->
+        <!-- produto-5 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-1.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Espumante Monte Paschoal Edição Especial Brut</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Brasil • Espumante • Brut</p>
+          <p class="all-products__preco">R$64,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-5 -->
+        <!-- produto-6 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-2.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Terra Pequena Signature Vinho regional Alentejano</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Portugal • Tinto • Meio Seco</p>
+          <p class="all-products__preco">R$139,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-6 -->
+        <!-- produto-7 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-3.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Frisante Pontebello Lambrusco I.G.T. dellEmilia Bianco Amabile</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Itália • Frisante • Suave/Doce</p>
+          <p class="all-products__preco">R$64,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-7 -->
+        <!-- produto-8 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-4.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Kyrios Torrontés</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Argentina • Branco • Seco</p>
+          <p class="all-products__preco">R$119,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-8 -->
+        <!-- produto-9 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-1.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Espumante Monte Paschoal Edição Especial Brut</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">País • Tipo • Categoria</p>
+          <p class="all-products__preco">R$64,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-9 -->
+        <!-- produto-10 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-2.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Terra Pequena Signature Vinho regional Alentejano</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Portugal • Tinto • Meio Seco</p>
+          <p class="all-products__preco">R$139,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-10 -->
+        <!-- produto-11 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-3.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Frisante Pontebello Lambrusco I.G.T. dellEmilia Bianco Amabile</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Itália • Frisante • Suave/Doce</p>
+          <p class="all-products__preco">R$64,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-11 -->
+        <!-- produto-12 -->
+        <li class="all-products__list_item">
+          <a href="item.html">
+            <img src="./assets/produtos/vinho-4.png" alt="Imagem de um vinho" class="all-products__imagem">
+            <div class="all-products__descricao">
+              <h4 class="all-products__nome">Kyrios Torrontés</h4>
+            </div>
+          </a>
+          <p class="all-products__descricao">Argentina • Branco • Seco</p>
+          <p class="all-products__preco">R$119,90</p>
+          <a href="carrinho.html">
+            <button class="all-products__botao">Compre agora</button>
+          </a>
+        </li>
+        <!-- .produto-12 -->
+      </ul>
+    </section>
+    <!-- .all-products -->
 
-  <footer>
-    <p>© Vinheria Agnello</p>
-  </footer>
+    <!-- recomendados -->
+    <section class="recomendados">
+      <h3 class="recomendados__titulo">Recomendados especialmente para você</h3>
+      <ul class="recomendados__list">
+          <li class="recomendados__list_item">
+              <a href="item.html">
+                  <img src="./assets/produtos/vinho-1.png" alt="Imagem de um vinho" class="recomendados__imagem">
+                  <div class="recomendados__descricao">
+                      <h4 class="recomendados__nome">Espumante Monte Paschoal Edição Especial Brut</h4>
+              </a>
+              <p class="recomendados__descricao">Brasil • Espumante • Brut</p>
+              <p class="recomendados__preco">R$64,90</p>
+              <a href="carrinho.html">
+                  <button class="recomendados__botao">Compre agora</button>
+              </a>
+              </div>
+          </li>
+          <li class="recomendados__list_item">
+              <a href="item.html">
+                  <img src="./assets/produtos/vinho-2.png" alt="Imagem de um vinho" class="recomendados__imagem">
+                  <div class="recomendados__descricao">
+                      <h4 class="recomendados__nome">Terra Pequena Signature Vinho regional Alentejano</h4>
+              </a>
+              <p class="recomendados__descricao">Portugal • Tinto • Meio Seco</p>
+              <p class="recomendados__preco">R$139,90</p>
+              <a href="carrinho.html">
+                  <button class="recomendados__botao">Compre agora</button>
+              </a>
+              </div>
+          </li>
+          <li class="recomendados__list_item">
+              <a href="item.html">
+                  <img src="./assets/produtos/vinho-3.png" alt="Imagem de um vinho" class="recomendados__imagem">
+                  <div class="recomendados__descricao">
+                      <h4 class="recomendados__nome">Frisante Pontebello Lambrusco I.G.T. dellEmilia Bianco Amabile
+                      </h4>
+              </a>
+              <p class="recomendados__descricao">Itália • Frisante • Suave/Doce</p>
+              <p class="recomendados__preco">R$64,90</p>
+              <a href="carrinho.html">
+                  <button class="recomendados__botao">Compre agora</button>
+              </a>
+              </div>
+          </li>
+          <li class="recomendados__list_item">
+              <a href="item.html">
+                  <img src="./assets/produtos/vinho-4.png" alt="Imagem de um vinho" class="recomendados__imagem">
+                  <div class="recomendados__descricao">
+                      <h4 class="recomendados__nome">Kyrios Torrontés</h4>
+              </a>
+              <p class="recomendados__descricao">Argentina • Branco • Seco</p>
+              <p class="recomendados__preco">R$119,90</p>
+              <a href="carrinho.html">
+                  <button class="recomendados__botao">Compre agora</button>
+              </a>
+              </div>
+          </li>
+      </ul>
+  </section>
+  <!-- .recomendados -->
+  </main>
+  <!-- .main -->
+
+  <!-- footer -->
   <footer>
     <section class="rodape">
       <div class="rodape__coluna rodape__coluna_logo">
@@ -121,5 +355,7 @@
     <section class="nota_rodape">
       <p class="nota_rodape__texto">Vinheria Agnello est. 1990 SE BEBER, NÃO DIRIJA. APRECIE COM MODERAÇÃO. A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</p></section>
   </footer>
+  <!-- footer -->
+
 </body>
 </html>

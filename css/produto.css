@@ -1,73 +1,68 @@
-.produto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px 20%;
-    justify-items: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-.produto__imagem {
-    width: auto;
-    height: 500px;
-}
-
-.produto__titulo {
+.all-products {
+    padding: 30px 10%;
+  }
+  
+  .all-products__titulo {
     font-size: 32px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 300;
+    font-family: "Unna", serif;
+    font-weight: 400;
     font-style: normal;
     color: var(--cor-links);
-}
-
-.produto__tabela_informacoes {
-    text-align: left;
-    font-size: 20px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--cor-texto);
-    border-spacing: 15px 20px;
-    margin-top: 20px;
-    margin-left: -4%;
-}
-
-.produto__preco {
-    font-size: 32px;
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: var(--cor-texto);
-    margin-top: 40px;
-}
-
-.produto__quantidade {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.produto__quantidade-botao {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--cor-links);
-    color: var(--cor-links);
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.produto__quantidade-input {
-    width: 60px;
-    height: 40px;
-    border: 1px solid var(--cor-links);
     text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .all-products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .all-products__list_item {
+    background-color: #D9D9D9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .all-products__imagem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .all-products__nome {
     font-size: 20px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-}
-
-.produto__botao {
-    padding: 19px 60px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    color: var(--cor-links);
+    margin: 0;
+  }
+  
+  .all-products__descricao {
+    font-size: 16px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    color: var(--cor-texto);
+    margin: 10px 0;
+  }
+  
+  .all-products__preco {
+    font-size: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    color: var(--cor-texto);
+    margin-top: 10px;
+  }
+  
+  .all-products__botao {
+    width: 100%;
+    padding: 19px;
     color: var(--cor-texto-claro);
     font-size: 20px;
     background-color: var(--cor-links);
@@ -75,5 +70,13 @@
     font-family: "Unna", serif;
     font-weight: 400;
     font-style: normal;
-    margin-top: 30px;
-}
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+  }
+  
+  .all-products__botao:hover {
+    background-color: #643D4A;
+    transform: translateY(-2px);
+  }
