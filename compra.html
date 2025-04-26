@@ -2,16 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compra Finalizada - Vinheria Agnello</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&family=Unna&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="./css/cabecalho.css">
   <link rel="stylesheet" href="./css/rodape.css">
   <link rel="stylesheet" href="./css/notarodape.css">
+  <link rel="stylesheet" href="./css/compra.css">
 </head>
 <body>
   <header>
@@ -23,35 +23,26 @@
               <img src="./assets/icons/logo.svg" alt="Logo Vinheria Agnello">
             </h1>
           </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-vinhos">Vinhos</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-presentes">Presentes</a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-clube">Clube Agnello</a>
-          </li>
+          <li><a href="#" class="cabecalho__nav_list_link">Vinhos</a></li>
+          <li><a href="#" class="cabecalho__nav_list_link">Presentes</a></li>
+          <li><a href="#" class="cabecalho__nav_list_link">Clube Agnello</a></li>
           <li class="cabecalho__nav_list_item-input">
             <img src="./assets/icons/icone-lupa.svg" alt="ícone de lupa" class="pesquisa-icon">
-            <input type="search" id="search" placeholder="Buscar" class="cabecalho__nav_list_input">
+            <input type="search" placeholder="Buscar" class="cabecalho__nav_list_input">
           </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-login"><img
-            src="./assets/icons/icone-login.svg" alt="ícone de login"></a>
-          </li>
-          <li class="cabecalho__nav_list_item">
-            <a href="#" class="cabecalho__nav_list_link cabecalho__nav_list_link-sacola"><img
-            src="./assets/icons/icone-sacola.svg" alt="ícone de sacola"></a>
-          </li>
+          <li><a href="#" class="cabecalho__nav_list_link"><img src="./assets/icons/icone-login.svg" alt="Login"></a></li>
+          <li><a href="#" class="cabecalho__nav_list_link"><img src="./assets/icons/icone-sacola.svg" alt="Sacola"></a></li>
         </ul>
       </ul>
     </nav>
   </header>
+
   <main class="compra-finalizada">
-    <h1>Obrigado pela sua compra!</h1>
-    <p>Seu pedido foi confirmado e logo será enviado.</p>
-    <a href="home.html">Voltar para a Home</a>
+    <div class="compra-finalizada__mensagem">
+      <h1>Obrigado pela sua compra!</h1>
+      <p>O seu pedido foi aceito e está sendo processado.<br>Você irá receber uma notificação com os detalhes do pedido no seu e-mail.</p>
+      <a href="index.html" class="botao-voltar">Voltar para a página inicial</a>
+    </div>
   </main>
   <footer>
     <section class="rodape">

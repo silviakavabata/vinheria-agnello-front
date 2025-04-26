@@ -1,0 +1,45 @@
+main.compra-finalizada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-color: #f7f7f7;
+    padding: 2rem;
+  }
+  
+  .compra-finalizada__mensagem {
+    text-align: center;
+  }
+  
+  .compra-finalizada__mensagem h1 {
+    font-family: 'Unna', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .compra-finalizada__mensagem p {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .botao-voltar {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 2px solid #800020;
+    color: #800020;
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #800020;
+    color: white;
+  }  
